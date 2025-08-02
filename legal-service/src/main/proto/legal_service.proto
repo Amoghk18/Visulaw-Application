@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package visulaw;
+
+message LegalDocumentRequest {
+  string id = 1;
+  string s3key = 2;
+  string user_email = 3;
+  string upload_time = 4;
+}
+
+message LegalDocumentResponse {
+  string id = 1;
+  string timestamp = 2;
+  repeated float embeddings = 3;
+  string email = 4;
+  string text = 5;
+  repeated RiskyClauseDetails clauses = 6;
+}
+
+message RiskyClauseDetails {
+  string clause = 1;
+  string tag = 2;
+  string confidence = 3;
+  string start_index = 4;
+  string end_index = 5;
+  string risk_score = 6;
+}

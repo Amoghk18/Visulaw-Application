@@ -1,0 +1,149 @@
+# ===== GLOBAL =====
+.DS_Store
+*.log
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# ===== GIT =====
+*.orig
+*.patch
+
+# ===== JAVA (Maven/Gradle) =====
+# Compiled class files
+*.class
+
+# Logs
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Eclipse
+.project
+.classpath
+.settings/
+.factorypath
+
+# IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# Spring Boot dev tools
+.spring-boot-devtools.properties
+.spring-boot-devtools.yml
+
+# ===== PYTHON =====
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+*.pyc
+*.egg-info/
+.eggs/
+*.egg
+*.env
+*.venv
+env/
+venv/
+ENV/
+build/
+dist/
+*.spec
+pip-wheel-metadata/
+pip-log.txt
+*.ipynb_checkpoints
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Virtualenv
+.env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre
+.pyre/
+
+# Poetry
+poetry.lock
+__pypackages__/
+
+# ===== OS-SPECIFIC =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# ===== DOCKER / ENV =====
+.env
+.env.*
+docker-compose.override.yml
+docker-compose.*.yml
+*.pid
+
+# ===== TEST / COVERAGE / REPORTS =====
+/test-output/
+/jacoco.exec
+/coverage/

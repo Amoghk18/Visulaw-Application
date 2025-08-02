@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-gateway
+
+
+  main:
+    web-application-type: reactive
+
+jwt:
+  secret: 3a6e356fb71a86297e337622adcbe0a5e139fa36ea30e9e88a94258de7fe951f
+
+server:
+  port: 9000
+
+authentication:
+  enabled: true

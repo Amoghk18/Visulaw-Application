@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+boto3
+aiokafka
+PyMuPDF  # or pdfminer.six
+sentence-transformers
+protobuf
+python-dotenv
+pydantic-settings>=2.0.0
+transformers>=4.39
+torch>=2.1
+redis
+sentencepiece
+nltk

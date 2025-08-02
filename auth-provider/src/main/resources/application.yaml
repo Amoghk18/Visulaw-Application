@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: auth-provider
+
+---
+spring:
+  config:
+    activate:
+      on-profile: default
+  datasource:
+    url: jdbc:postgresql://db:5432/visulaw
+    username: user
+    password: pass
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+security:
+  jwt:
+    secret: 3a6e356fb71a86297e337622adcbe0a5e139fa36ea30e9e88a94258de7fe951f
+    expiration: 86400000
+    refresh-token:
+      expiration: 604800000
+
+server:
+  port: 8081
+
+---
+spring:
+  config:
+    activate:
+      on-profile: build
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+  main:
+    allow-bean-definition-overriding: true
