@@ -16,11 +16,11 @@ security:
   api-key: 5613c6cf-506d-4daa-8edd-1caab5c50bb0
 
 r2:
-  endpoint: https://108c6da5902e74294b8eff1be431f116.r2.cloudflarestorage.com
+  endpoint: <R2-ACCOUNT-ENDPOINT>
   region: auto
-  access-key: 02aed0b3ea54669ba9ee0bb8aa88035d
-  secret-key: c9eb08ea405a3cec07a7268bbc1c37fa16da3221317c907b3767c52123738c79
-  bucket: legaldocs
+  access-key: <R2-ACCESS-KEY>
+  secret-key: <R2-SECRET-KEY>
+  bucket: <R2-BUCKET-NAME>
 
 # ───────────────────────────────
 # RUNTIME PROFILE (Docker, Local Dev)
